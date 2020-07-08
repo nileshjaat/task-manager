@@ -46,7 +46,7 @@ const TaskForm = () => {
           {editItem ? "Edit Task" : "Add Task"}
         </button>
         <button onClick={clearTask} className="btn clear-btn">
-          Clear
+          Clear All Tasks
         </button>
       </div>
     </form>
