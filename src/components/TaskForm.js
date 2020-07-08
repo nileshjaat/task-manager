@@ -39,13 +39,14 @@ const TaskForm = () => {
         type="text"
         className="task-input"
         placeholder="Add Task..."
+        maxLength="35"
         required
       />
       <div className="buttons">
         <button type="submit" className="btn add-task-btn">
           {editItem ? "Edit Task" : "Add Task"}
         </button>
-        <button onClick={clearTask} className="btn clear-btn">
+        <button onClick={clearTask} type="button" className="btn clear-btn">
           Clear All Tasks
         </button>
       </div>
